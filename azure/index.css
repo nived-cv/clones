@@ -1,0 +1,502 @@
+
+
+@font-face{
+    font-family : "mnormal";
+    src:url("normal.woff2");
+}
+@font-face{
+    font-family : "mbold";
+    src:url("semi-bold.woff2");
+}
+@font-face{
+    font-family : "mfluent";
+    src:url("MWFFluentIcons.woff2");
+}
+
+body,a,header,footer,li,ul{
+    margin:0;
+    padding:0;
+    font-family: mnormal;
+    font-size: 16px;
+    line-height: 24px;
+    color:rgb(26, 26, 31);
+}
+.tab-view-icon,.nav-list,.image-options,.search-box,.learn,.support,.contact,.account{
+    display:none;
+}
+
+header{
+    height:78px;
+}
+.header-section{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow:1;
+    padding-top:12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    box-sizing: border-box;    
+    letter-spacing: -.48px
+}
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: mbold;
+    min-width: 130px;
+}
+.menu .image-menu img{
+    width:20px;
+    height:13px;
+    padding-right:15.5px;
+    padding-left: 12px;
+}
+.menu .image-menu{
+    height:44px;
+    display: flex;
+    align-items: center;
+}
+.menu .azure{
+    display: flex;;
+    align-items: center;
+    font-size: 18px;
+    height:44px;
+    color:rgb(26, 26, 31);
+    letter-spacing: -0.48px;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 130px;
+
+}
+.sign-in .image-search{
+    margin-top: 6px;
+    margin-right:13px;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in .image-search::before{
+    content: '\e721';
+    font-family: mfluent;
+    font-size: 18px;
+}
+.sign-in .text{
+    font-size: 14px;
+    line-height:14px;
+    padding:20px;
+}
+
+.hero-section .banner{
+    width: 100%;
+}
+
+.hero-section .banner img{
+    width: 100%;
+}
+.ai{
+    margin-top: -13px;
+    padding:12px 16px;
+    background-color: #f8f9fa;
+}
+.ai h2{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    font-family: mbold;
+    letter-spacing: -0.05em;
+    color: rgb(26, 26, 31);
+    margin-bottom: 12px;
+}
+
+.ai .subtext{
+    color:#142034;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing:-0.03em;
+    padding:0;
+    margin:0;
+}
+button{
+    border:2px solid black;
+    background-color: #0078D4;
+    color:#fff;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    padding: calc(0.75rem - 2px) calc(1rem - 2px);
+    font-size: .9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    font-family: mbold;
+    width:100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.get-started{
+    margin-top: 40px;
+    border-color:transparent;
+    height:48px;
+}
+.get-started p, .try-azure p{
+    margin-top: 0px;
+}
+
+.try-azure{
+    margin-top: 8px;
+    border-color: #243a5e;
+    background-color: transparent;
+    color:#243a5e;
+    height:48px;
+}
+.chat{
+    width:148.68px;
+    height:46px;
+    border-color: transparent;
+    position: fixed;
+    bottom:0;
+    right:16px;
+    background-color: #0067B8;
+}
+.chat::before{
+    content: "";
+    font-family: mfluent;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 100;
+    left:12px;
+    top:11px
+}
+.chat p{
+    margin-top: 0;
+    margin-left: 19.5px;
+}
+.sticky-nav{
+    background-color: #fefefe;
+    box-shadow:  0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.063rem 0.125rem rgba(0, 0, 0, 0.14);
+    height:60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.inner-items{
+    width: 100%;
+}
+.inner-items p{
+    margin-left: 20px;
+    color:rgb(36, 58, 94);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.48px;
+    font-weight:400px;
+    font-family: mbold;
+}
+.sticky-nav span::after{
+    position: absolute;
+    content: "";
+    font-family: mfluent;
+    right:50%;
+    top:50%;
+}
+
+
+
+
+
+/* ----------------------------------------------- */
+
+
+
+@media screen and (min-width:425px) {
+    .ai{
+        margin-top: -12px;
+    }
+    
+}
+
+
+/* --------------------- TABLET VIEW BEGINS 768px--------------- */
+
+@media screen and (min-width:768px) {
+
+    .mob-view-icon,#logo{
+        display:none;
+    }
+
+    .tab-view-icon{
+        display:block
+    }
+
+
+    header{
+        height:55px;
+    }
+
+    .header-section{
+        padding:0;
+        margin:0;
+    }
+    .menu{
+        padding:0 12px;
+    }
+
+    .tab-view-icon{
+        margin-top: 2px;
+    }
+
+    .menu .image-menu{
+        height:fit-content;
+    }
+    .menu .image-menu img{
+        width:24px;
+        height:26px;
+        padding:0;
+    }
+    .menu .azure{
+        margin-left:12px;
+    }
+
+    .nav-list{
+        display:flex;
+        font-family: mnormal;
+        margin-left: 12px;
+        font-size: 13px;
+        
+    }
+    .nav-list .tabs{
+        display:flex;
+        padding:20px 8px;
+        font-size: 13px;
+        line-height:13px;
+        letter-spacing: 0;
+    }
+    .nav-list .tabs::after{
+        font-family: mfluent;
+        content: "";
+        font-size: 8px;
+        line-height: 8px;
+        margin-left: 4px;
+        margin-top: 5px;
+
+    }
+
+    .image-options{
+        display: flex;
+        padding:15px 10px;
+    }
+    .image-options img{
+        width:24px;
+        height:24px;
+
+    }
+
+    .sign-in .image-search{
+        display: flex;
+        align-items: center;
+    }
+    .sign-in .image-search::before{
+      
+        font-size:14px;
+        margin-right: 2.5px;
+        margin-top:-6px;
+        
+    }
+    .sign-in .text{
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .ai{
+        margin-top: -13px;
+    }
+
+    .ai{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+    .get-started{
+        width: fit-content;
+    }
+    .try-azure{
+        width:fit-content;
+        margin-left: 3.5px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+/* ----------------LAPTOP VIEW 1024----------------------- */
+
+@media screen and (min-width:1024px) {
+
+    .hero-section{
+        position: relative;
+    }
+    .ai{
+        padding: 0;
+        margin:0;
+        position: absolute;
+        top:62px;
+        left:56px;
+        width:44%;
+        background-color: transparent;
+    }
+    .ai h2{
+        font-size:2.5rem;
+        line-height: 3rem;
+        letter-spacing: -0.05em;
+    }
+    .ai .subtext{
+        margin-top: 17px;
+    }
+    .get-started{
+        width:120.38px;
+        height:48px;
+        margin-top:48px;
+    }
+    .try-azure{
+        width:162.08px;
+        height:48px;
+    }
+    .chat{
+        width:156.67px;
+        height:46px;
+    }
+    .chat p{
+        margin-top: 0;
+        margin-left: 12px;
+    } 
+
+
+    
+    
+}
+
+
+/* ----------------VIEW 1440----------------------- */
+
+@media screen and (min-width:1440px) {
+
+    
+    .sign-in .image-search,.image-options{
+        display: none;
+    }
+   
+
+    .search-box,.learn,.support,.contact,.account{
+        display: block;
+    }
+
+    .menu .azure{
+        margin-left: 24px;
+    }
+    .nav-list{
+        margin-left: 24px;
+    }
+    .nav-list .tabs::after {
+        margin-top: 5px;
+    }
+
+    .sign-in{
+        /* letter-spacing: 0; */
+
+        
+    }
+
+   
+
+    .search-box{
+        position: relative;
+        margin-right: 23px;
+    } 
+
+    .search-box::before{
+      
+        content: '\e721';
+        font-family: mfluent;
+        font-size: 14px;
+        position: absolute;
+        right:15px;
+        top:3px;
+    }
+    .search-box input{
+        border: 1px solid #747479;
+        border-radius: 4px;
+        background-color: #f8f9fa;
+        width:120px;
+        height:32px;
+        box-sizing: border-box;
+        padding-left: 11px;
+        padding-top: 3px;
+        font-size: 13px;
+        font-family: mnormal;
+    }
+
+
+   .sign-in .account{
+    border: 1px solid #6f9e02;
+    background-color: #89c402;
+    border-radius: 4px;
+    color: #1a1a1f;
+    font-family: mnormal;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 18px;
+    line-height: 1;
+    text-align: center;
+    padding:9px;
+    padding-top:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:84px;
+    height:32px;
+    box-sizing: border-box;
+    margin-left: 6px;
+    margin-right: 6px;
+    
+    }
+    .sign-in .account span{
+        margin-top: 10px;
+        white-space: nowrap;
+    }
+
+    .ai{
+        top:55px;
+        left:72px;
+    }
+    .ai h2{
+        font-size: 3rem;
+        line-height: 3.5rem;
+        letter-spacing: -0.05em;
+    }
+
+    .ai .subtext{
+        line-height: 2rem;
+        font-size: 1.25rem;
+        letter-spacing: -0.03em;
+        margin-top: 16.5px;
+    }
+
+}
+
