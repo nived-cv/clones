@@ -1,0 +1,26 @@
+    --root-gradient-linear-sky-blue: linear-gradient(90deg, #ede8f6 0%, #f4fafd 49.99%, #dceef8 100%);
+    
+    -----------------------------------
+    arrow-button code
+    .view-all span{
+    position: relative;
+    background-color: rgb(0, 120, 212);
+    border-radius: 8px;
+    line-height: 22px;
+    padding: calc(0.5rem - 2px);
+    width: 31px;
+    height: 31px;
+    box-sizing: border-box;
+}
+.view-all span::after{
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    font-size: 15px;
+    color: white;
+    font-family: mfluent;
+    content: "";
+    font-weight: 400;
+    z-index: 0;
+}
+-----------------------------
