@@ -347,7 +347,6 @@ button{
     display: flex;
     flex-direction: row;
     overflow: scroll;
-    position: relative;
 }
 .scroll-buttons{
     white-space: nowrap;
@@ -366,15 +365,33 @@ button{
     color:#fff;
 
 }
-
-.scroll .arrow-button{
-    position: fixed;
-    left:10px;
-    width:20px;
-    height:20px;
-    border : 1px solid #243a5e;
-    border-radius: 50%;
+.scroll-container{
+    position: relative;
 }
+
+.scroll-container .arrow-button{
+    position: absolute;
+    right:5px;
+    top:calc(50% - 20px);
+    width:40px;
+    height:40px;
+    border : 2px solid #243a5e;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background:linear-gradient(270deg,#dceef8 25%,transparent 100%) ;
+}
+.scroll-container .arrow-button span::after{
+    position: absolute;
+    content: "";
+    font-family: mfluent;
+    font-size: 1.125rem;
+    color:#243a5e;
+
+    right:calc(50% - 9px);
+    top:calc(40% - 9px);
+
+}
+
 
 .solutions-expand{
 
