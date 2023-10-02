@@ -21,7 +21,7 @@ body,a,header,footer,li,ul{
     line-height: 24px;
     color:rgb(26, 26, 31);
 }
-.tab-view-icon,.nav-list,.image-options,.search-box,.learn,.support,.contact,.account,#start-free{
+.tab-view-icon,.nav-list,.image-options,.search-box,.learn,.support,.contact,.account,#start-free,.solutions-large{
     display:none;
 }
 
@@ -293,12 +293,16 @@ button{
 }
 .description p{
     margin-bottom: 32px;
-    color:rgb(20, 32, 52);
-    font-size: 16px;
+    color:rgb(12, 20, 32);
+    font-size: 15px;
     letter-spacing: -0.48px;
     line-height: 24px;
-    font-family: mnormal;
+    font-family: mbold;
+    text-decoration: underline;
 
+}
+.description span{
+    letter-spacing: -0.48px;
 }
 .explore{
     display: flex;
@@ -340,7 +344,19 @@ button{
 .solutions{
     padding-left: 1rem;
     padding-right: 1rem;
+    background: linear-gradient(90deg, #ede8f6 0%, #f4fafd 49.99%, #dceef8 100%);;
+}
 
+.solutions .caption h3{
+    margin-top: 0;
+ 
+}
+.solutions h2{
+    letter-spacing: -0.05em;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: mbold;
+    font-weight: 100;
 }
 
 .scroll{
@@ -358,15 +374,21 @@ button{
     margin-right: .5rem;
     height:40px;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
 
 }
 .scroll-buttons:nth-child(1){
-    background-color: #243a5e;
+    background-color: #005797;
     color:#fff;
 
 }
 .scroll-container{
     position: relative;
+}
+.scroll::-webkit-scrollbar{
+
+    display: none;
 }
 
 .scroll-container .arrow-button{
@@ -378,7 +400,7 @@ button{
     border : 2px solid #243a5e;
     border-radius: 50%;
     box-sizing: border-box;
-    background:linear-gradient(270deg,#dceef8 25%,transparent 100%) ;
+    background:linear-gradient(270deg,#dceef8 25%,transparent 100%);
 }
 .scroll-container .arrow-button span::after{
     position: absolute;
@@ -393,15 +415,28 @@ button{
 }
 
 
-.solutions-expand{
 
+.ai-expand .image-section img{
+    object-fit: cover;
+    width:100%;
+    border-radius: 16px;
+    margin-top: 2rem;
 }
 
 .expandables{
     display:flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom:1px solid rgb(187, 194, 205);
     position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.expandables:nth-child(1){
+    border-bottom: none;
+}
+.expandables:nth-child(1) span::after{
+    rotate: -180deg;
 }
 .expandables span::after{
     font-family: mfluent;
@@ -412,10 +447,20 @@ button{
     top:10px;
     right:10px;
 }
+.expandables h3{
+    font-size: 18px;
+    color:rgb(26, 26, 31);
+    font-family: mbold;
+    line-height: 24px;
+    margin:0;
+}
+
 
 .view-all{
     display: flex;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .view-all span{
     position: relative;
@@ -448,7 +493,295 @@ button{
     margin-left: 10px;
 }
 
+.products{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(244, 250, 253);
+    margin-top: -12px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.products .card{
+    padding:1rem;
+    
+}
+.products .card .featured-image{
+    width:3rem;
+    height:3rem;
+    box-sizing: border-box;
+    border:0.0625rem solid #bbc2cd;
+    border-radius: 0.25rem;
+}
+.products .card .content{
+    padding:0;
+}
+.products .card p{
+    text-decoration: none;
+}
+.products .card .explore span{
+    margin: 0;
+    text-decoration: underline;
+    color:#0c1420;
+}
 
+.resources{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #f8f9fa;
+    padding-top: 3rem;
+    padding-bottom: 48px;
+
+}
+.resources h2{
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.05em;
+    font-family: mbold;
+}
+
+.resources .scroll{
+}
+
+.resources .arrow-button{
+    border-color:rgb(36, 58, 94);
+    background: linear-gradient(270deg,var(--arrow-background-color,#f2f2f2) 25%,rgba(242,242,242,0) 100%);;
+}
+.scroll-tabs{
+
+   
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    box-sizing: border-box;
+    width: 220px;
+    border-right: 1px solid #bbc2cd;
+
+    
+}
+.scroll-tabs:nth-child(1){
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    box-shadow:  rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, ;
+}
+.scroll-tabs:last-child{
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow:  rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, ;
+}
+.scroll-tabs .text{
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 4px;
+    white-space: nowrap;
+    width: 220px;
+    margin:0;
+    font-size: .875rem;
+    line-height:1.25rem;
+    letter-spacing:-0.03em;
+}
+.scroll-tabs span{
+    width:100%;
+    height:8px;
+    background-color: #0078d4;
+    border-bottom-left-radius: 8px;
+}
+.slim{
+    display: flex;
+    position: relative;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    justify-content: center;
+}
+
+.slim p{
+    color:rgb(0, 103, 184);
+    font-size: 16px;
+    letter-spacing: -.32px;
+    line-height: 24px;
+    font-weight: 600;
+    margin:0;
+
+}
+.slim span::after{
+    color :rgb(0, 103, 184);
+    content: "";
+    font-family: mfluent;
+    font-size: 16px;
+    position: absolute;
+    right:23%;
+    font-weight: 600;
+}
+
+.resources .image-section img{
+    width:100%;
+    height: 100%;
+    border-radius:16px;
+
+}
+
+.infrastructure{
+    position: relative;
+ 
+}
+
+
+.infrastructure .image-target{
+    width:100%;
+    height:312px;
+}
+.infrastructure .image-target img{
+   
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infrastructure .image-overlay{
+    width:100%;
+    height:100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top:0;
+}
+.infrastructure .text{
+    text-align: center;
+    color:white;
+    position: absolute;
+    top:25%;
+    left:auto;
+    box-sizing: border-box;
+}
+.infrastructure .text h3{
+    font-size: 28px;
+    letter-spacing: -1.4px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: mbold;
+
+}
+.infrastructure .text span{
+    color:rgb(220, 238, 248);
+}
+
+.explore {
+    border:2px solid rgb(141, 200, 232);
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    padding:10px 14px;
+    font-size:15px;
+    font-family: mbold;
+    font-weight: 600px;
+    letter-spacing: -0.3px;
+    line-height: 22px;
+    color:rgb(220, 238, 248);
+    margin-top: 20px;
+}
+
+.cloud-investments{
+    padding: 48px 20px;
+    padding-left: 16px;
+}
+.cloud-investments h2{
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.05em;
+    text-align: center;
+}
+.cloud-investments .banner{
+    background: linear-gradient(122deg, #cbe6f4 -18.47%, #8dc8e8 50.34%, #c5b4e3 118.47%);
+    border-radius: 1rem;
+
+}
+.cloud-investments .content{
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap:3rem;
+}
+.cloud-investments .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 16px;
+}
+.cloud-investments .items .text-section{
+    font-family: mbold;
+    font-size: 1.25rem;
+    line-height:1.75rem;
+    letter-spacing: -0.05em;
+}
+
+.customer-stories{
+    padding:48px 16px;
+}
+.customer-stories h2{
+    font-family: mbold;
+
+}
+.fujitsu{
+    box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+    border-radius: 16px;
+
+}
+.fujitsu .logo{
+    border:1px solid rgb(187, 194, 205);
+    width: fit-content;
+    border-radius: 8px;
+}
+.fujitsu .image-section img{
+
+    width:100%;
+    height:100%;
+    border-radius:16px;
+    border-bottom-right-radius:0px ;
+    border-bottom-left-radius:0px ;
+}
+.fujitsu .content{
+    padding:16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.fujitsu .description{
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -1px;
+    font-family: mbold;
+    color:rgb(0,0,0);
+
+}
+.fujitsu .products-list h4{
+    color:rgb(12, 20, 32);
+    font-size: 14px;
+    letter-spacing: -.48px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.fujitsu .products-list{
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.list-items{
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    color:rgb(0, 103, 184);
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.round-button{
+    width:10px;
+    height:10px;
+    border:1px solid rgb(187, 194, 205);
+    border-radius: 50%;
+}
 
 
 /* ----------------------------------------------- */
@@ -576,6 +909,33 @@ button{
         padding-right:64px;
     }
 
+    .solutions{
+        padding-left:4rem;
+        padding-right:4rem;
+    }
+
+
+
+
+
+    .infrastructure .text{
+        text-align: center;
+        color:white;
+        position: absolute;
+        top:25%;
+        left:calc(50% - 292px);
+        box-sizing: border-box;
+    }
+    .infrastructure .explore{
+        width:146px;
+        height:48px;
+        box-sizing: border-box;
+        padding-bottom: 0;
+        white-space: nowrap;
+        margin:auto;
+        margin-top: 20px;
+    }
+
     
 }
 
@@ -591,6 +951,12 @@ button{
 
 @media screen and (min-width:1024px) {
 
+    .solutions-expand .ai-expand{
+        display: none;
+    }
+    .solutions .expandables , .solutions .view-all{
+        display: none;
+    }
 
     .banner{
         height:100%;
@@ -728,10 +1094,94 @@ button{
         padding:24px;
 
     }
-    
-  
 
-    
+    .solutions{
+        padding-left:3.5rem;
+        padding-right:3.5rem;
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    .caption h2{
+        width:448px;
+    }
+
+    .scroll{
+        margin-top: 30px;
+    }
+
+    .solutions-large{
+        margin-top: 100px;
+        display:flex;
+        justify-content: space-between;
+    }
+    .solutions-text{
+        width:30%;
+    }
+    .solutions-text .expandables,.view-all{
+        display: flex;
+        margin-left: 50px;
+        align-items: center;
+        
+    }
+    .view-all p{
+        border-bottom: none;
+    }
+    .solutions-text .expandables span::after{
+        top:40%;
+        right:0%;
+    }
+    .solutions-text .expandables:nth-child(1){
+        margin-left:0;
+    }
+
+    .solutions-text p{
+        border-bottom: 1px solid rgb(187, 194, 205);
+        margin-bottom:0;
+        margin-top:0;
+        padding-top:15px;
+        padding-bottom:32px;
+    }
+    .solutions-large .view-all{
+        display: flex;
+    }
+    .solutions-large .ai-expand{
+        border-left : 3px solid rgb(0, 120, 212);
+        padding-left:50px;
+        
+    }
+    .solutions-large .solutions-img {
+        width: 50%;
+        height: 40%;
+        object-fit:cover;
+    }
+    .solutions-large .solutions-img img{
+        border-radius: 16px;
+        width: 100%;
+        aspect-ratio: initial;
+        object-fit:cover;
+    }
+
+    .cloud-investments{
+        padding-left: 56px;
+        padding-right: 60px;
+
+    }
+    .cloud-investments .content{
+        flex-direction: row;
+        column-gap: 72px;
+        padding:72px;
+    }
+    .cloud-investments .text-section{
+        font-size: 20px;
+        letter-spacing: -1px;
+        line-height: 28px;
+        width: 205px;
+    }
+    .cloud-investments .items{
+        row-gap: px;
+    }
+
+ 
     
 }
 
@@ -861,7 +1311,19 @@ button{
     .inner-items p{
         margin-top: -2px;
     }
+    
+    .solutions{
+        padding-left:72px;
+        padding-right:72px;
+    }
 
+    .caption h2{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        letter-spacing: -0.05em;
+        width:100%;
+
+    }
 
 }
 
