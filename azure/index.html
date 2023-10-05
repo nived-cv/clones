@@ -49,12 +49,16 @@
 <body>
     <div class="hero-section">
         <div class="banner">
-            <img src="assets/azure-hp-hero.avif">
+            <picture>
+                <source media="(min-width:1080px)" srcset="assets/Desktop-Hero-Oct.avif">
+                <img src="assets/Mobile-Hero-Oct.avif">
+            </picture>
+            
         </div>
         <div class="ai">
-            <h2>Human ingenuity. AI power.</h2>
+            <h2>Endless possibilities—from the edge to the cloud&nbsp </h2>
             <p class="subtext">
-                Build, ship, and scale AI solutions using the latest AI models and your favorite Azure tools. Pay-as-you-go or try Azure free for up to 30 days. There’s no upfront commitment—cancel anytime.
+                Broaden your impact with global infrastructure, cutting-edge&nbspAI services, and the latest dev tools. Pay-as-you-go or try Azure free for up to 30 days. There’s no upfront commitment—cancel anytime.
             </p>
             <button class="get-started"><p>Get started</p></button>
             <button class="try-azure"><p>Try Azure for free</p></button>
@@ -78,6 +82,9 @@
     </div>
 
     <div class="featured">
+        <div class="bg-img-featured">
+            <img src="assets/Desktop-FeaturedNews-Background-2x.avif">
+        </div>
         <div class="caption">
             <h3>FEATURED NEWS</h3>
             <h2>Discover what's happening on Azure</h2>
@@ -86,16 +93,16 @@
         <div class="cards-container">
                 <div class="card">
                     <div class="featured-image">
-                        <img src="assets/featured-news-card-1.avif">
+                        <img src="assets/featured-news-card1.avif">
                     </div>
                     <div class="content">
                         <div class="description">
-                            <h5>Enable vector and hybrid search</h5>
-                            <p>Now in preview: build next-gen apps using vector and hybrid search capabilities from Azure Cognitive Search</p>
+                            <h5>Microsoft Ignite</h5>
+                            <p>Join us November 14--17,2023 to explore the latest innovations, learn from experts, level up your skillset, and expand your network.</p>
                         </div>
                         <div class="explore">
                             <div class="box"><span></span></div>
-                            <span class="text2">Explore Azure Cognitive Search</span>
+                            <span class="text2">Register now</span>
                         </div>
                     </div>
                 </div>
@@ -103,31 +110,32 @@
 
                 <div class="card">
                     <div class="featured-image">
-                        <img src="assets/featured-news-card-2.avif">
+                        <img src="assets/featured-news-card2.avif">
                     </div>
                     <div class="content">
                         <div class="description">
-                            <h5>Create innovative AI solutions </h5>
-                            <p>Access sophisticated vision, speech, and language AI models and create your own machine learning models.</p>
+                            <h5>Transcribe and translate audio </h5>
+                            <p>Create high-quality transcriptions and translations with the OpenAI Whisper model—now in preview in Azure OpenAI Service and Azure AI Speech.
+                            </p>
                         </div>
                         <div class="explore">
                             <div class="box"><span></span></div>
-                            <span class="text2">Explore Azure UI</span>
+                            <span class="text2">Explore Azure OpenAI Service</span>
                         </div>
                     </div>
                 </div>
             <div class="card">
                 <div class="featured-image">
-                    <img src="assets/featured_news_card-3.avif">
+                    <img src="assets/featured-news-card3.avif">
                 </div>
                 <div class="content">
                     <div class="description">
-                        <h5>Turn your vision into impact</h5>
-                        <p>Quickly develop intelligent apps that help you transform your organization and drive growth.</p>
+                        <h5>Watch the Cloud Cultures series</h5>
+                        <p>Discover how people around the world are using Azure to innovate—and how their local work is changing lives on a global scale.</p>
                     </div>
                     <div class="explore">
                         <div class="box"><span></span></div>
-                        <span class="text2">Learn more</span>
+                        <span class="text2">Watch now</span>
                     </div>
                 </div>
             </div>
@@ -169,12 +177,8 @@
                 </div>
                 
 
-                <div class="expandables">
-                    <h3>Responsible AI with Azure</h3>
-                    <span></span>
-                </div>
-                <div class="expandables">
-                    <h3>Turn your vision into impact</h3>
+                <div class="expandables specific">
+                    <h3>Windows Server on Azure</h3>
                     <span></span>
                 </div>
                 <div class="expandables">
@@ -182,7 +186,11 @@
                     <span></span>
                 </div>
                 <div class="expandables">
-                    <h3>Azure AI infrastructure</h3>
+                    <h3>DevOps solutions on Azure</h3>
+                    <span></span>
+                </div>
+                <div class="expandables">
+                    <h3>Cloud scale analytics</h3>
                     <span></span>
                 </div>
     
@@ -214,11 +222,7 @@
                 </div>
             </div> 
             <div class="expandables">
-                <h3>Responsible AI with Azure</h3>
-                <span></span>
-            </div>
-            <div class="expandables">
-                <h3>Turn your vision into impact</h3>
+                <h3>Windows Server on Azure</h3>
                 <span></span>
             </div>
             <div class="expandables">
@@ -226,7 +230,11 @@
                 <span></span>
             </div>
             <div class="expandables">
-                <h3>Azure AI infrastructure</h3>
+                <h3>DevOps solutions on Azure</h3>
+                <span></span>
+            </div>
+            <div class="expandables">
+                <h3>Cloud scale analytics</h3>
                 <span></span>
             </div>
 
@@ -256,97 +264,111 @@
             </div>
             <div class="arrow-button"><span></span></div>
         </div>
+        <div class="horizontal-view">
 
-        <div class="cards-container">
-            <div class="card">
-                <div class="featured-image">
-                    <img src="assets/svgexport-5.svg">
+            <div class="openai">
+                <!-- <div class="overlay-openai"></div> -->
+                <div class="bg-openai"><img src="assets/openAI.avif"></div>
+                <div class="overlay"></div>
+                <div class="contents">
+                    <h2>Azure OpenAI Service</h2>
+                    <p>Apply advanced coding and language models to a variety of use cases.</p>
+                    <button>Explore the product</button>
                 </div>
-                <div class="content">
-                    <div class="description">
-                        <h5>Azure Cognitive Search</h5>
-                        <p>Add AI-powered content search to apps</p>
+
+            </div>
+
+            <div class="cards-container">
+                <div class="card">
+                    <div class="featured-image">
+                        <img src="assets/svgexport-49.svg">
                     </div>
-                    <div class="explore">
-                        <span class="text2">Explore the product</span>
+                    <div class="content">
+                        <div class="description">
+                            <h5>Azure AI services</h5>
+                            <p>Create intelligent apps with APis and customizable models</p>
+                        </div>
+                        <div class="explore">
+                            <span class="text2">Explore the product</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="featured-image">
+                        <img src="assets/synapse.svg">
+                    </div>
+                    <div class="content">
+                        <div class="description">
+                            <h5>Azure Synapse Analytics</h5>
+                            <p>Accelerate time to insight across enterpirse data warehouses and big data systems.</p>
+                        </div>
+                        <div class="explore">
+                            <span class="text2">Explore the product</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="featured-image">
+                        <img src="assets/sql.svg">
+                    </div>
+                    <div class="content">
+                        <div class="description">
+                            <h5>Azure SQL</h5>
+                            <p>Migrate and modernise your SQL workloads.</p>
+                        </div>
+                        <div class="explore">
+                            <span class="text2">Explore the product</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="featured-image">
+                        <img src="assets/svgexport-49.svg">
+                    </div>
+                    <div class="content">
+                        <div class="description">
+                            <h5>Azure AI Document Intelligence</h5>
+                            <p>Accelerate information extraction from documents.</p>
+                        </div>
+                        <div class="explore">
+                            <span class="text2">Explore the product</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="featured-image">
+                        <img src="assets/svgexport-28.svg">
+                    </div>
+                    <div class="content">
+                        <div class="description">
+                            <h5> Microsoft Defener for Cloud</h5>
+                            <p>Protect multicloud and hybrid environments with integrated security.</p>
+                        </div>
+                        <div class="explore">
+                            <span class="text2">Explore the product</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="featured-image">
+                        <img src="assets/svgexport-9.svg">
+                    </div>
+                    <div class="content">
+                        <div class="description">
+                            <h5>  Microsoft Fabric</h5>
+                            <p>Bring data and analytics services together on an AI-powered platform.</p>
+                        </div>
+                        <div class="explore">
+                            <span class="text2">Explore the product</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="featured-image">
-                    <img src="assets/chatgpt.svg">
-                </div>
-                <div class="content">
-                    <div class="description">
-                        <h5>Azure OpenAI Service</h5>
-                        <p>Apply advanced coding and language models to a variety of use cases.</p>
-                    </div>
-                    <div class="explore">
-                        <span class="text2">Explore the product</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="featured-image">
-                    <img src="assets/svgexport-6.svg">
-                </div>
-                <div class="content">
-                    <div class="description">
-                        <h5>Azure AI Vision</h5>
-                        <p>Discover computer vision insights from image and video analysis.</p>
-                    </div>
-                    <div class="explore">
-                        <span class="text2">Explore the product</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="featured-image">
-                    <img src="assets/svgexport-7.svg">
-                </div>
-                <div class="content">
-                    <div class="description">
-                        <h5>Azure Cosmos DB</h5>
-                        <p>Build or modernize scalable, high-performance apps.</p>
-                    </div>
-                    <div class="explore">
-                        <span class="text2">Explore the product</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="featured-image">
-                    <img src="assets/svgexport-8.svg">
-                </div>
-                <div class="content">
-                    <div class="description">
-                        <h5> Azure App Services</h5>
-                        <p>Expand apps to additional locations.</p>
-                    </div>
-                    <div class="explore">
-                        <span class="text2">Explore the product</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="featured-image">
-                    <img src="assets/svgexport-9.svg">
-                </div>
-                <div class="content">
-                    <div class="description">
-                        <h5>  Microsoft Fabric</h5>
-                        <p>Bring data and analytics services together on an AI-powered platform.</p>
-                    </div>
-                    <div class="explore">
-                        <span class="text2">Explore the product</span>
-                    </div>
-                </div>
-            </div>
-        <div class="view-all">
-            <span></span>
-            <p>See all products (200+)</p>
+                
         </div>
-            
+    <div class="view-all">
+        <span></span>
+        <p>See all products (200+)</p>
     </div>
 </div>
         
@@ -367,9 +389,13 @@
             </div>
             <div class="arrow-button"><span></span></div>
         </div>
+        <div class="text-head"><p>IT Professionals</p></div>
+        <div class="text-sub"><p>Optimise your infrastructure with popular Azure solutions and services.</p></div>
         <div class="slim">
+            <div class="view-all">
+                <span></span>
+            </div>
             <p>Get started with Azure</p>
-            <span></span>
         </div>
         <div class="image-section">
             <img src="assets/resources.avif">
@@ -390,12 +416,13 @@
     </div>
 
     <div class="cloud-investments">
+        <div class="bg-img-cloud"><img src="assets/Desktop-DataCard-Background.avif"></div>
         <h2>Get more value from your cloud investments</h2>
         <div class="banner">
             <div class="content">
                 <div class="items">
                     <div class="image-section">
-                        <img src="assets/svgexport-36.svg">
+                        <img src="assets/svgexport-158.svg">
                     </div>
                     <div class="text-section">
                         16%: average savings of direct infrastructure-related costs with Azure
@@ -403,7 +430,7 @@
                 </div>
                 <div class="items">
                     <div class="image-section">
-                        <img src="assets/svgexport-37.svg">
+                        <img src="assets/svgexport-159.svg">
                     </div>
                     <div class="text-section">
                         37%: average three-year cost savings when you run equivalent workloads on Azure                    
@@ -411,7 +438,7 @@
                 </div>
                 <div class="items">
                     <div class="image-section">
-                        <img src="assets/svgexport-38.svg">
+                        <img src="assets/svgexport-160.svg">
                     </div>
                     <div class="text-section">
                         54%: potential total cost of ownership savings on Azure versus running on-premises                   
@@ -428,6 +455,28 @@
             <h2>See how customers are innovating with Azure</h2>
         </div>
         <div class="scroll-customer">
+            <div class="fujitsu">
+                <div class="image-section">
+                    <img src="assets/fujitsu.avif">
+                </div>
+                <div class="content">
+                    <div class="logo">
+                        <img src="assets/Fujitsu-2x.png">
+                    </div>
+                    <div class="description">
+                        Fujitsu increased efficency and reduced costs by migrating its on premises datacenters to Azure and by modernizing with a cloud-first strategy.
+                    </div>
+                    <div class="products-list">
+                        <h4>Products</h4>
+                        <div class="product-list-direction">
+                            <div class="list-items"><div class="round-button"></div>Azure Kubernetes Services (AKS)</div>
+                            <div class="list-items"><div class="round-button"></div>AzureDevOps</div>
+                            <div class="list-items"><div class="round-button"></div><span>Azure Container Storage<sup>PREVIEW</sup></span></div>
+                        </div>
+                    </div>
+                    <button>Case study</button>
+                </div>
+            </div>
             <div class="fujitsu">
                 <div class="image-section">
                     <img src="assets/fujitsu.avif">
@@ -484,7 +533,7 @@
     </div>
 
     <div class="next-step">
-        <img class="bg-img" src="assets/next-step-cta-img.avif">
+        <img class="bg-img" src="assets/Desktop-NextStep-Background.avif">
         <h2>Take the next step</h2>
         <div class="cards-container">
             <div class="card">
