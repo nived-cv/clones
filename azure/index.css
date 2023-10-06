@@ -307,6 +307,9 @@ button{
 .card .content{
     padding:16px;
     padding-top:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .content .description{
     display: flex;
@@ -393,7 +396,7 @@ button{
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 48px;
-    padding-top: 48px;
+    padding-bottom: 48px;
     background: rgb(244, 250, 253);
 }
 
@@ -409,12 +412,21 @@ button{
     font-weight: 100;
 }
 
+.solutions .scroll{
+    margin-top: 32px;
+}
+
+.solutions .view-all{
+    padding-bottom:0;
+
+}
+
 .scroll{
     display: flex;
     flex-direction: row;
     overflow: scroll;
     margin-top: 24px;
-    /* margin-top: 32px; */
+    
 }
 .scroll-buttons{
     white-space: nowrap;
@@ -499,6 +511,11 @@ button{
 .expandables:nth-child(1){
     border-bottom: none;
 }
+ .specific{
+    margin-top: 20px;
+    border-top:1px solid rgb(187, 194, 205);
+}
+
 
 
 .expandables:nth-child(1) span::after{
@@ -597,10 +614,23 @@ button{
     box-sizing: border-box;
     border:0.0625rem solid #bbc2cd;
     border-radius: 0.25rem;
+    position: relative;
 }
+.products .card .featured-image img{
+    width:24px;
+    height:24px;
+    position: absolute;
+    top:calc(50% - 12px);
+    left:calc(50% - 12px);
+}
+
 .products .card .content{
     padding:0;
     padding-top: 16px;
+}
+
+.products h5{
+    font-size: 1.25rem;
 }
 .products .card p{
     text-decoration: none;
@@ -691,8 +721,8 @@ button{
 .slim{
     display: flex;
     position: relative;
-    margin-top: 12px;
-    margin-bottom: 24px;
+    margin-top: 16px;
+    margin-bottom: 32px;
     justify-content: center;
     align-items: center;
 }
@@ -742,9 +772,11 @@ button{
 }
 
 
+
 .infrastructure .image-target{
     width:100%;
     height:312px;
+    /* height: 100%; */
 }
 .infrastructure .image-target img{
    
@@ -876,6 +908,8 @@ button{
 .scroll-customer{
     display: flex;
     overflow-x: scroll;
+    column-gap: 16px;
+    padding: 10px 0;
   
 }
 .scroll-customer::-webkit-scrollbar{
@@ -884,7 +918,7 @@ button{
 
 .fujitsu{
     flex-shrink: 0;
-    width: 100%;
+    width: calc(100% - 10px);
     box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
     border-radius: 16px;
     background-color: white;
@@ -1028,6 +1062,11 @@ button{
 }
 .next-step .cards-container{
     padding:0 16px;
+    padding-right: 20px;
+}
+.next-step .card .content{
+    display: flex;
+    height:160px;
 }
 .next-step .featured-image{
     width:3rem;
@@ -1156,7 +1195,11 @@ footer{
 .service .title h4{
     margin: 0;
     color:rgb(26, 26, 31);
-    
+    padding-left:1px;
+}
+
+.plus-icon{
+    padding-bottom:2px;
 }
 
 .plus-icon::after{
@@ -1164,6 +1207,8 @@ footer{
     content: "+";
     font-size: 20px;
     font-family: mfluent;
+    padding-right:1px;
+    padding-bottom:1px;
 }
 .footer-end{
 
@@ -1256,8 +1301,29 @@ footer{
         display: flex;
         flex-wrap: wrap;
     }
+    .products-list{
+        height:155px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+    }
     .products-list .list-items{
         margin-right: 8px;
+    }
+    .products-list h4{
+        margin-bottom:12px;
+        
+    }
+    .ai-expand .description p{
+        margin-top: 26px;
+        font-size: .9375rem;
+        line-height:1.375rem;
+        letter-spacing:-0.02em;
+
+    }
+    .summary{
+        padding-top:88px;
     }
 
     
@@ -1285,6 +1351,8 @@ footer{
         padding:0;
         margin:0;
     }
+
+
     .menu{
         padding:0 12px;
     }
@@ -1356,14 +1424,13 @@ footer{
         font-size: 13px;
         line-height: 13px;
     }
-    .ai{
-        margin-top: -13px;
-    }
 
     .ai{
+        margin-top: -11px;
         padding-left: 64px;
         padding-right: 64px;
     }
+
     .get-started{
         width: fit-content;
     }
@@ -1374,7 +1441,7 @@ footer{
 
     .featured{
         padding-left:64px;
-        padding-right:64px;
+        padding-right:68px;
     }
 
     .solutions{
@@ -1402,14 +1469,38 @@ footer{
         row-gap:12px;
     }
 
+    .products .view-all{
+        margin-top: 24px;
+        padding-top: 0;
+    }
+    .products .view-all span{
+        margin-left:8px;
+    }
 
+    .products-list{
+        height:120px;
+    }
 
+    .resources{
+        padding:48px 64px;
+    }
+
+    .slim p{
+        font-size:15px;
+        font-family: mnormal;
+        color: rgb(36, 58, 94);
+    }
+    .infrastructure{
+        height:292px;
+    }
     .infrastructure .text{
+        width: 100%;
         text-align: center;
         color:white;
         position: absolute;
-        top:25%;
-        left:calc(50% - 292px);
+        /* top:25%;
+        left:calc(50% - 292px); */
+        letter-spacing:-0.54px;
         box-sizing: border-box;
     }
     .infrastructure .explore{
@@ -1421,8 +1512,18 @@ footer{
         margin:auto;
         margin-top: 20px;
     }
+    .infrastructure .text h3{
+        margin-bottom:12px;
+    }
 
-   
+    .cloud-investments{
+        padding:48px 64px;
+        padding-right: 68px;
+    }
+    
+    .fujitsu .image-section{
+        height:312px;
+    }
   
     .customer-stories button{
         width:102.08px;
@@ -1432,9 +1533,14 @@ footer{
         padding-right:64px;
     }
 
+    .fujitsu{
+        letter-spacing: -0.03em;   
+    }
+
+
     .next-step .cards-container{
         padding-left: 4rem;
-        padding-right: 4rem;
+        padding-right: 68px;
     }
     .next-step h2{
         font-size: 28px;    
@@ -1450,6 +1556,10 @@ footer{
         left:calc(50% - 12px);
         width:24px;
         height: 24px;
+    }
+
+    .next-step .card .content{
+        height:120px;
     }
 
     .summary{
@@ -1504,10 +1614,10 @@ footer{
 
 @media screen and (min-width:1024px) {
 
-    .solutions-expand .ai-expand,.customer-stories .nav-buttons{
+    .solutions-expand .ai-expand,.customer-stories .nav-buttons, .products .scroll-container .arrow-button,.solutions .scroll-container .arrow-button{
         display: none;
     }
-    .solutions .expandables , .solutions .view-all{
+    .solutions .expandables{
         display: none;
     }
     .services-container{
@@ -1558,8 +1668,22 @@ footer{
         letter-spacing: -0.05em;
         margin-top: 34px;
     }
+
+    .ai-expand .expandables{
+        padding-top:0px;
+    }
+
+    .ai-expand .description p{
+        margin-top: 32px;
+        padding-top:0;
+       
+    }
     .ai .subtext{
         margin-top: 16px;
+    }
+
+    .expandables:nth-child(2){
+        white-space: nowrap;
     }
     .get-started{
         width:120.38px;
@@ -1624,7 +1748,7 @@ footer{
         font-family: mnormal;
         font-weight: 400;
         letter-spacing: -0.42px;
-        margin-top: 0;
+        margin-top: -2px;
         margin-bottom: 0;
         margin-left: 0;
         white-space: nowrap;
@@ -1657,34 +1781,74 @@ footer{
     .featured .card:nth-child(3) img{
         height:118px;
     }
+    .featured{
+        padding:96px 56px;
+        padding-right:64px;
+    }
+    .featured .caption h2{
+        font-size:30px;
+    }
+    .featured .caption h3{
+        margin-bottom:16px;
+    }
+    .featured .card .content{
+        padding-top: 18px;
+        height:247px;
+    }
     .card .content{
         padding:24px;
-
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+    .featured .cards-container{
+        margin-top:48px;
+    }
+    .featured .card{
+        width:calc(100% /3);
+    }
+    .featured .card .content p{
+        margin-top: 24px;
+    }
+    .featured .view-all span{
+        margin-left: 8px;
     }
 
     
 
     .solutions{
         padding-left:3.5rem;
-        padding-right:3.5rem;
-        padding-top: 96px;
+        padding-right:64px;
+        padding-top: 72px;
         padding-bottom: 96px;
+    }
+    .solutions .view-all{
+        margin-left: 0;
     }
     .caption h2{
         width:448px;
     }
 
-    .scroll{
-        margin-top: 30px;
+    .solutions .caption h3{
+        margin-bottom:16px;
+    }
+
+    .solutions .scroll{
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .solutions .scroll-buttons{
+        padding: 8px 24px;
     }
 
     .solutions-large{
-        margin-top: 100px;
         display:flex;
         justify-content: space-between;
     }
     .solutions-text{
-        width:30%;
+        width:32%;
     }
     .solutions-text .expandables,.view-all{
         display: flex;
@@ -1704,8 +1868,19 @@ footer{
         right:0%;
     }
    
+    .ai-expand .expandables span::after{
+        content: "";
+        rotate:-180deg;
+    }
+
+
     .solutions-text .expandables:nth-child(1){
         margin-left:0;
+        padding-top:0;
+    }
+
+    .solutions-text .expandables{
+            padding:32px 0px;
     }
 
     .solutions-text p{
@@ -1720,7 +1895,7 @@ footer{
     }
     .solutions-large .ai-expand{
         border-left : 3px solid rgb(0, 120, 212);
-        padding-left:50px;
+        padding-left:48px;
         
     }
     .solutions-large .solutions-img {
@@ -1764,6 +1939,11 @@ footer{
         flex-direction: column;
         height:190px;
     }
+
+    .products .scroll-buttons{
+        padding: 8px 24px;
+    }
+
     .products .content h5{
         font-size : 20px;
         letter-spacing: -1px;
@@ -1774,7 +1954,7 @@ footer{
         margin-left: 0;
     }
     
-    .products .card img{
+    .products .card .featured-image img{
         width:32px;
         height:32px;
         position: absolute;
@@ -1799,6 +1979,7 @@ footer{
         width:100%;
         height:100%;
         border-radius:12px;
+        /* padding-right:4px; */
     }
     .openai .overlay{
         position: absolute;
@@ -1808,7 +1989,7 @@ footer{
         width:100%;
         background: rgba(0, 0, 0, 0.52);
         border-radius:12px;
-
+      
     }
     .openai button{
         width:177.2px;
@@ -1847,10 +2028,29 @@ footer{
         border-radius:12px;
     }
 
+    .infrastructure {
+        height:400px;
+
+    }
+    .infrastructure .image-target{
+        height: 100%;
+    }
+     
+    .infrastructure .text span{
+        font-size: 18px;
+        letter-spacing:-0.54px;
+        line-height:28px;
+
+    }
+    .infrastructure .text h2{
+        font-size :1.875rem;
+        letter-spacing :-0.05em;
+        line-height:2.25rem;
+    }
 
     .cloud-investments{
-        padding-left: 56px;
-        padding-right: 60px;
+        padding: 72px 56px;
+        padding-right:64px;
 
     }
     .cloud-investments h2{
@@ -1858,7 +2058,7 @@ footer{
         letter-spacing: -1.5px;
         line-height: 36px;
         font-family: mbold;
-
+        padding-left: 10px;
 
     }
     .cloud-investments .content{
@@ -1888,13 +2088,34 @@ footer{
     .resources{
         padding-left: 56px;
         padding-right: 56px;
+        padding:72px 56px;
+        display: flex;
+        flex-direction: column;
+        
     }
+    
     .resources .image-section{
         display: flex;
         justify-content: center;
+        width:fit-content;
+        align-self: center;
+        padding:24px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 16px;
     }
     .resources .image-section img{
-        width:auto;
+        width:558px;
+        height:314px;
+    }
+
+    .text-head{
+        padding-top:60px;
+        padding-bottom:16px;
+    }
+    .text-head p,.text-sub p{
+        padding:0;
+        margin: 0;
     }
 
     .resources .caption{
@@ -1909,11 +2130,15 @@ footer{
     .resources .caption h3{
         font-family: mbold;
         font-weight: 400;
-        color:#005597;
+        /* color:#005597; */
+        color: rgb(33, 53, 86);
         font-size: 12px;
         letter-spacing: 0.96px;
         line-height: 16px;
 
+    }
+    .resources .scroll-container .arrow-button{
+        top:25px;
     }
 
 
@@ -1959,24 +2184,30 @@ footer{
         height:auto;
     }
     .fujitsu .products-list{
-        margin-top: 70px;
+        height:auto;
     }
 
     .customer-stories{
-        padding-left:56px;
-        padding-right:56px;
+        padding: 72px 56px;
+        padding-right: 62px;
     }
     .customer-stories .view-all{
         margin-left:0px;
+        padding-bottom: 0;
+    }
+    .fujitsu .image-section{
+        height: 384.4px;
     }
 
     .fujitsu .content{
         padding:24px;
+        height:auto;
+        row-gap: 16px;
     }
     .fujitsu button{
         width:118px;
         height:48px;
-
+        margin-top: 16px;
     }
     .fujitsu h4{
         margin-bottom: 0px;
@@ -1996,6 +2227,7 @@ footer{
         margin-top: 48px;
         padding-bottom: 40px;
         padding-left: 56px;
+        padding-right: 64px;
     }
     .next-step .card{
         width:calc(100% / 3);
@@ -2050,6 +2282,7 @@ footer{
 
     .summary{
         padding: 96px 56px;
+        padding-top: 144px;
     }
     .get-app{
         height:48px;
@@ -2082,6 +2315,7 @@ footer{
         line-height: 1.3;
         background-color:transparent;
         padding: 0px 0px;
+        margin-left: -1px;
         /* width:100%; */
         border-radius:4px;
         box-sizing: border-box;
@@ -2116,6 +2350,8 @@ footer{
     /* .language{
 
     } */
+
+
     .language select{
         width:167.66px;
         border: 1px solid rgb(116, 116, 121);
@@ -2125,11 +2361,17 @@ footer{
 
     .footer-end{
         display: flex;
-     
+        
     }
     .inline-item{
         margin:0;
-        padding-bottom: 47px;
+        padding-bottom: 46px;
+    }
+    .twitter , .ln{
+        padding-top:1px
+    }
+    .get-app .logo{
+        padding-top: 4px;
     }
     .choices span{
         width:83px;
@@ -2158,7 +2400,7 @@ footer{
     
 
     
-    .sign-in .image-search,.image-options{
+    .sign-in .image-search,.image-options,.arrow-button{
         display: none;
     }
    
@@ -2246,7 +2488,7 @@ footer{
     }
 
     .ai{
-        top:56px;
+        top:62px;
         left:72px;
     }
     .ai h2{
@@ -2259,7 +2501,6 @@ footer{
         line-height: 2rem;
         font-size: 1.25rem;
         letter-spacing: -0.03em;
-        margin-top: 16.5px;
         width:640px;
     }
     .ai .get-started{
@@ -2275,8 +2516,47 @@ footer{
     #start-free{
         /* margin-right: 278px; */
     }
+
+
+    .featured{
+        padding: 96px 72px;
+      
+
+    }
+    .featured .caption h2{
+        font-size : 40px;
+        margin-top: 20px;
+    }
     .inner-items p{
         margin-top: -2px;
+    }
+
+    .featured .cards-container{
+        margin-top: 52px;
+        padding-right:8px;
+    }
+    .featured .card{
+        border-radius:24px;
+    }
+    .featured .card .content{
+        height:200.3px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .featured .card h5{
+        font-size : 20px;
+        letter-spacing:-0.6px;
+    }
+    .featured .card .description p{
+        margin-top: 26px;
+    }
+    .featured .card .featured-image img{
+        border-radius:16px;
+    }
+
+    .featured .card:nth-child(3) .featured-image img{
+        height:173px;
     }
     
     .solutions{
@@ -2284,6 +2564,27 @@ footer{
         padding-right:72px;
     }
 
+    .solutions .expandables h3{
+        font-size: 20px;
+        line-height:28px;
+        letter-spacing:-0.54px;
+
+    }
+    .solutions {
+        padding-right:80px;
+    }
+
+    .solutions .caption h2{
+        margin-bottom:15px;
+    }
+    .products .caption h2{
+        font-size:32px;
+        letter-spacing: -1.6px;
+        
+    }
+    .products .caption h3{
+        margin-bottom: 16px;
+    }
     .caption h2{
         font-size: 2rem;
         line-height: 2.5rem;
@@ -2291,7 +2592,16 @@ footer{
         width:100%;
 
     }
-
+    .products .scroll-container .scroll{
+        margin-top:32px;
+    }
+    .solutions .solutions-img img{
+        border-radius: 24px;
+    }
+    .solutions-large .ai-expand{
+        border-left : 4px solid rgb(0, 120, 212);
+    }
+   
     .horizontal-view{
         display: inline-flex;
         flex-wrap: nowrap;
@@ -2340,6 +2650,9 @@ footer{
         font-size: 24px;
         
     }
+
+
+
   
     .openai{
         width:35%;
@@ -2368,6 +2681,94 @@ footer{
         letter-spacing:-0.6px;
     }
 
+    .resources .caption h3{
+        margin-bottom: 16px;
+    }
+    .resources .caption h2{
+        font-size : 40px;
+        margin-bottom:32px;
+    }
+
+    .resources {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .resources .scroll{
+        margin: 0;
+    }
+
+    .resources .image-section{
+        /* width:864px; */
+        /* height:507px; */
+        width:66.67%;
+    }
+    .resources .image-section img{
+        width:100%;
+        height:100%;
+    }
+    .infrastructure .text h3{
+        font-size:2.5rem;
+        line-height:3rem;
+        letter-spacing: -2px;
+    }
+
+    .infrastructure .text span{
+        font-size: 20px;
+        letter-spacing:-0.6px;
+        line-height:32px;
+    }
+
+    .infrastructure .explore{
+        margin-top: 32px;
+    }
+
+    .cloud-investments{
+        padding-top: 20px;
+        padding-left: 72px;
+        padding-right: 80px;
+
+    }
+    .bg-img-cloud{
+        width:100%;
+    }
+    .cloud-investments h2{
+            font-size:2.5rem;
+            line-height:3rem;
+            letter-spacing:-0.05em;
+
+    }
+    .cloud-investments .items .text-section {
+        font-size: 20px;
+        line-height:1.75rem;
+
+    }
+    .cloud-investments .banner .content{
+        padding:4.5rem;
+        column-gap: 72px;
+       
+        display: flex;
+   
+    }
+    .banner .items .image-section{
+        align-self: flex-start;
+    }
+    
+    .banner .items .image-section img{
+        width:21px;
+        height:27px;
+    }
+    .banner .items{
+        display: flex;
+        flex-direction: row;
+        column-gap: 24px;
+        width:calc(100% / 3);
+    }
+    .banner .items .text-section{
+        width:100%;
+        text-align: left;
+    }
     .next-step h2{
         font-size: 40px;
         letter-spacing: -2px;
