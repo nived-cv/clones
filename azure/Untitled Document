@@ -24,3 +24,33 @@
     z-index: 0;
 }
 -----------------------------
+
+ .products .content{
+        row-gap:16px;
+    }
+    .product-list-direction{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .products-list{
+        /* height:155px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+    }
+    .fujitsu .image-section{
+        height:164px;
+    }
+    .products-list .list-items{
+        margin-right: 8px;
+        font-size:14px;
+        letter-spacing:-0.48px;
+        line-height:20px;
+        padding: 0;
+        padding-bottom: 8px;
+    }
+    .products-list h4{
+        margin-bottom:12px;
+        margin-top: 0px;
+    }
