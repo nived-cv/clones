@@ -247,7 +247,7 @@ button{
     justify-content: center;
     border:none;
     font-family:dbold;
-
+    width:fit-content;
 }
 button img{
     margin-left:4px;
@@ -335,6 +335,7 @@ button img{
     font-size:24px;
     line-height:32px;
     color:rgb(25,25,25);
+    letter-spacing:-0.01ch;
 }
 .crave h3{
     font-family :dbold;
@@ -377,10 +378,11 @@ button img{
 }
 .dash-pass h2{
     margin-top:20px;
-    max-width:90%;
+    max-width:80%;
     font-family:dbold;
     font-size:24px;
     line-height:32px;
+    letter-spacing:-0.01ch;
     color:rgb(25,25,25);
 }
 .dash-pass span{
@@ -396,19 +398,443 @@ button img{
     padding-right:12px;    
 }
 
+.promote{
+    position: relative;
+}
+.bg-shade{
+    position: absolute;
+    top:20%;
+    left:0;
+    height:80%;
+    width:100%;
+    z-index:-1;
+    background-color:rgb(254, 241, 238);
+
+}
+
+.grocery{
+    position: relative;
+    height:350px;
+}
+.grocery .image-section{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index: -1;
+}
+.grocery .image-section img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.grocery .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:rgba(30, 30, 30, 0.6);
+}
+.grocery .text-section{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width:550px;
+    z-index:1;
+    text-align: center;
+    align-items: center;
+    color:white;
+    top: calc(50% - 99px);
+}
+.grocery h2{
+    font-family:dbold;
+    font-size:24px;
+    line-height:32px;
+    letter-spacing:-0.170399px;
+    max-width:90%;
+    filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
+}
+.grocery h3{
+    font-family:dbold;
+    line-height:22px;
+    font-size:18px;
+    margin-top:10px;
+}
+.grocery span{
+    font-family:dnorm;
+    font-weight:500px;
+    margin-top:10px;
+    font-size:14px;
+    line-height:20px;
+    max-width: 90%;
+}
+.grocery button{
+    margin-top:20px;
+}
 
 
+.features{
+    position: relative;
+}
+
+.convenience{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+}
+.convenience .image-section{
+    width:100%
+}
+.convenience .image-section img{
+    height:180px;
+    width:100%;
+    object-fit:cover;
+}
+.convenience .text-section{
+    display: flex;
+    flex-direction: column;
+}
+.convenience h2{
+    margin-top:20px;
+    max-width:90%;
+    font-family:dbold;
+    font-size:24px;
+    line-height:32px;
+    color:rgb(25,25,25);
+    letter-spacing:-0.01ch;
+}
+.convenience span{
+    margin-top:10px;
+    font-size:14px;
+    line-height:20px;
+    font-family:dmed;
+
+}
+.convenience button{
+    margin-top:20px;
+    width:fit-content;
+    padding-left:12px;
+    padding-right:12px;
+}
+.gifting{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    background-color:rgb(254,241,238);
+    /* align-items: center; */
+}
+.gifting .caption{
+    max-width:300px;
+    font-size:24px;
+    padding:20px;
+    padding-top:40px;
+    font-family:dbold;
+    margin-inline:auto;
+}
+.cards{
+    display:flex;
+    overflow-x: scroll;
+}
+.card{
+    padding:20px;
+    min-width:90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left:5%;
+    margin-right:-10%;
+    box-sizing: border-box;
+}
+.card .image-section{
+    width:100%;
+}
+.card .image-section img{
+    width:100%;
+    height:180px;
+    object-fit: cover;
+}
+.card .text-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card h3{
+    margin-top:20px;
+    max-width:90%;
+    font-size:24px;
+    font-family:dbold;
+    line-height:32px;
+    letter-spacing:-0.01ch;
+}
+.card span{
+    font-size:14px;
+    line-height:20px;
+    margin-top:10px;
+    color:rgb(25,25,25);
+    font-family: dmed;
+}
+.card button{
+    margin-top:20px;
+    font-size:14px;
+    line-height:16px;
+
+}
+/**/
 
 
+.opportunity{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 
+.opportunity .caption{
+    font-size: 24px;
+    letter-spacing: -0.170399px;
+    line-height:32px;
+    padding:20px;
+    padding-top: 20px;
+    font-family:dbold;
+    text-align: center;
+    font-weight: 600;
+}
+.opportunity .bg-shade{
+    top:25%;
+    height:75%;
+}
+.dasher .image-section{
+    width:100%
+}
+.dasher .image-section img{
+    height:180px;
+    width:100%;
+    object-fit:cover;
+}
+.dasher .text-section{
+    display: flex;
+    flex-direction: column;
+}
+.dasher h2{
+    margin-top:20px;
+    max-width:90%;
+    font-family:dbold;
+    font-size:24px;
+    line-height:32px;
+    color:rgb(25,25,25);
+    letter-spacing:-0.01ch;
+}
+.dasher h3{
+    font-family :dbold;
+    margin-top:10px;
+    color:rgb(25,25,25);
+    font-size:18px;
+    line-height:22px;
+}
+.dasher span{
+    margin-top:10px;
+    font-size:14px;
+    line-height:20px;
+    font-family:dmed;
 
+}
+.dasher button{
+    margin-top:20px;
+    width:fit-content;
+    padding-left:12px;
+    padding-right:12px;
+}
 
+/**/
+.business{
+    padding-top:20px;
+    display: flex;
+    flex-direction: column;
+}
+.business .image-section{
+    width:100%
+}
+.business .image-section img{
+    height:180px;
+    width:100%;
+    object-fit:cover;
+}
+.business .text-section{
+    display: flex;
+    flex-direction: column;
+}
+.business h2{
+    margin-top:20px;
+    max-width:80%;
+    font-family:dbold;
+    font-size:24px;
+    line-height:32px;
+    letter-spacing:-0.01ch;
+    color:rgb(25,25,25);
+}
+.business span{
+    margin-top:10px;
+    font-size:14px;
+    font-family:dmed;
+    line-height:20px;
+}
+.business button{
+    margin-top:20px;
+    width:fit-content;
+    padding-left:12px;
+    padding-right:12px;    
+}
 
+footer{
+    background-color: rgb(25, 25, 25);
+    color:rgb(196, 196, 196);
+    padding:32px 20px;
+}
+
+.footer-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 12px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    width:calc(50% - 6px);
+}
+
+.footer-item:nth-child(3){
+    margin-top: 64px;
+    width:100%;
+}
+.footer-item h3{
+    text-align: center;
+    margin-bottom:8px;
+    color:white;
+    font-family:dnorm;
+    font-size:16px;
+    line-height:22px;
+}
+.cities{
+    display: flex;
+    flex-direction: column;
+}
+.cols{
+    display: flex;
+    flex-direction: column;
+}
+.cols span{
+    margin-top: 8px;
+    text-align: center;
+    font-size:14px;
+    line-height:20px;
+    font-family:dmed;
+}
+
+.footer-2{
+    padding-top:32px;
+    padding-bottom:32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    row-gap:12px;
+    column-gap: 12px;;
+}
+.contact span{
+    margin-top: 8px;
+    font-size:14px;
+    line-height:20px;
+    font-family:dmed;
+}
+.contact h3{
+    margin-bottom:8px;
+    color:rgb(255,255,255);
+    font-size: 16px;
+    line-height:22px;
+    font-weight:500;
+    font-family:dmed;
+}
+.know-us,.help,.doing-business{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    margin-top:32px;
+   
+}
+
+.box-rounded{
+    background-color: rgb(73, 73, 73);
+    padding: 2px 8px;
+    border-radius:8px;
+    align-items:center;
+    margin-top:12px;
+}
+
+.footer-end{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.footer-logo{
+    width:fit-content;
+    height: 18px;
+    display: inline;
+}
+.long-list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height:18px;
+    justify-content: center;
+    font-family:dnorm;
+    margin-top: 12px;
+}
+.social{
+    display: flex;
+    column-gap: 12px;
+    width:fit-content;
+    margin: 0;
+    margin-inline:auto;
+}
+
+.select{
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    margin:12px;
+    border-radius:16px;
+    padding:4px 12px ;
+    box-sizing: border-box;
+}
+
+.select img{
+    margin-right:8px;
+}
+.select span{
+    color: rgb(25,25,25);
+    font-family:dmed;
+    font-size:14px;
+}
+.select .arrow-container{
+    background-color: white;
+    width:24px;
+    height:24px;
+}
 
 
 @media screen and (min-width:425px) {
     
-
 }
 
 
@@ -527,7 +953,259 @@ button img{
         max-width: 400px;;
     }
 
+    .bg-shade{
+        top:45%;
+        height:55%;
+    }
 
+    .grocery{
+        height:600px;
+    }
+    .grocery .text-section{
+        left:calc(50% - 275px);
+    }
+    .grocery h2{
+        font-size: 40px;
+        line-height:44px;
+        letter-spacing: -0.02ch;
+    }
+    .grocery h3{
+        font-size:24px;
+        line-height:32px;
+        letter-spacing:-0.01ch;
+    }
+    .grocery span{
+        font-size:16px;
+        line-height:22px;
+        letter-spacing:0ch;
+
+    }
+    .grocery button{
+        font-size:16px;
+        line-height:18px;
+        width:114.328px;
+        white-space: nowrap;
+    }
+
+   
+    .convenience{
+        flex-direction: row-reverse;
+        align-items: center;
+        column-gap:60px;
+        padding-top:60px;
+    }
+    .convenience .image-section img{
+        height:500px;
+    }
+    .convenience h2{
+        font-size:40px;
+        letter-spacing:-0.02ch;
+        line-height:44px;
+    }
+    .convenience span{
+        font-size:16px;
+        line-height:22px;
+        margin-top:20px;
+    }
+    .convenience button{
+        margin-top:30px;
+        font-size: 16px;
+        line-height:18px;
+        min-height: 40px;
+    }
+    .convenience .text-section{
+        max-width: 400px;;
+    }
+    .shade{
+        position: absolute;
+        background-color: rgb(254,241,238);
+        width:100%;
+        top:26%;
+        height:75%;
+        z-index: -1;
+    }
+    .gifting .caption{
+        padding:40px 20px;
+        padding-top: 20px;
+        font-size: 40px;
+        letter-spacing:-0.568px;
+        font-family:dbold;
+        color:rgb(25, 25, 25);
+        max-width:500px;
+    }
+    .cards{
+        overflow: auto;
+        flex-wrap: wrap;
+    }
+    .card{
+        width:50%;
+        min-width: 50%;
+        margin: 0;
+    }
+    .card .image-section img{
+        height:100%;
+    }
+    .card .image-section{
+        height:344px;
+        
+    }
+    .card h3{
+        font-size:40px;
+        letter-spacing:-0.568px;
+        line-height:44px;
+    }
+    .card span{
+        font-size:16px;
+        line-height:22px;
+        margin-top:20px;
+    }
+    .card button{
+        margin-top:30px;
+        height:40px;
+        font-size:16px;
+        line-height:18px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+     .opportunity .caption{
+        margin-inline:auto;
+        font-size:40px;
+        letter-spacing:-0.568px;
+        line-height:44px;
+        max-width:500px;
+        text-align: center;
+        padding: 40px 20px;
+        padding-top:60px;
+     }
+     .opportunity .bg-shade{
+        top:53%;
+        height:50%;
+     }
+    .dasher{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        column-gap:60px;
+    }
+    .dasher .image-section img{
+        height:500px;
+      
+    }
+    .dasher h2{
+        font-size:40px;
+        letter-spacing:-0.02ch;
+        line-height:44px;
+    }
+    .dasher h3{
+        font-size: 24px;
+        line-height:32px;
+        letter-spacing:-0.01ch;
+        margin-top:20px;
+    }
+    .dasher span{
+        font-size:16px;
+        line-height:22px;
+    }
+    .dasher button{
+        margin-top:30px;
+        font-size: 16px;
+        line-height:18px;
+        min-height: 40px;
+    }
+    .dasher .text-section{
+        max-width: 400px;;
+    }
+
+    /**/
+    .business{
+        flex-direction: row;
+        align-items: center;
+        column-gap:60px;
+    }
+    .business .image-section img{
+        height:500px;
+    }
+    .business h2{
+        font-size:40px;
+        letter-spacing:-0.02ch;
+        line-height:44px;
+    }
+    .business span{
+        font-size:16px;
+        line-height:22px;
+    }
+    .business button{
+        margin-top:30px;
+        font-size: 16px;
+        line-height:18px;
+        min-height: 40px;
+    }
+    .business .text-section{
+        max-width: 400px;;
+    }
+
+    .footer-1{
+        display: flex;
+        flex-direction: column;
+        row-gap:12px;
+    }
+    .footer-item{
+        width:100%;
+        text-align: left;
+        align-items: flex-start;
+        margin-bottom:32px;
+        margin-top:32px;
+    }
+    .footer-item:nth-child(1){
+        margin-top: 0px;
+    }
+
+    .cities{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+    }
+    .cols{
+        width:calc(100% / 3);
+    }
+    .cols span{
+        text-align: left;
+        
+    }
+
+    .cuisines{
+        display:flex;
+        width:100%;
+    }
+    .cuisines .cols{
+        width:calc(100% / 2);
+    }
+    .categories{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact{
+        flex-direction: row;
+        justify-content: space-between;
+        width:100%;
+    }
+    .know-us,.help,.doing-business{
+        text-align: left;
+    }
+    .footer-end{
+        flex-direction: row;
+    }
+    .right-items{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .select{
+        white-space: nowrap;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -567,6 +1245,13 @@ button img{
     }
     .go-icon{
         justify-content: center;
+    }
+
+    .dasher h2{
+        max-width:90%;
+    }
+    .business h2{
+        max-width:90%;
     }
     
 }
@@ -624,9 +1309,9 @@ button img{
     .unit h3{
         margin-top:8px;
     }
+    .grocery button{
+        width:138.33px;
+        height:40px;
+    }    
     
-
 }
-
-
-
