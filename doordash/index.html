@@ -11,7 +11,10 @@
 <header>
     <div class="header-section">
         <div class="bg-img">
-            <img src="assets/hero_landing_us_mobile.avif">
+            <picture>
+                <source media="(min-width:1080px)" srcset="assets/hero_landing_us_desktop.webp">
+                <img src="assets/hero_landing_us_mobile.avif">
+            </picture>
         </div>
         <div class="banner-top-items">
             <div class="logos">
@@ -68,7 +71,7 @@
             <div class="playstore"><img src="assets/google-play-store-logo.svg"></div>
             <div id="title">DoorDash App</div>                
             <span>Food & Groceries, Delivered</span>
-            <button class="red-btn"><p>Get The app</p><img src="assets/svgexport-6.svg"></button>
+            <button class="red-btn"><p>Get the App</p><img src="assets/svgexport-6.svg"></button>
         </div>
     </div>
 
@@ -77,7 +80,7 @@
             <div class="image-section"><img src="assets/ScootScoot.svg"></div>
             <div class="text-section">
                 <h2>Become a Dasher</h2>
-                <h3>As a delivery driver,you'll make reliable money working anytime, anywhere.</h3>
+                <h3>As a delivery driver, you'll make reliable money working anytime, anywhere.</h3>
                 <div class="action-link"><span>Start earning</span><img src="assets/svgexport-7.svg"></div>
             </div>
         </div>
@@ -92,29 +95,39 @@
         <div class="unit">
             <div class="image-section"><img src="assets/iphone.svg"></div>
             <div class="text-section">
-                <h2>Get the best Doordash experience</h2>
-                <h3>Experience th best your neighborhood has to offer, all in one app.</h3>
+                <h2>Get the best DoorDash experience</h2>
+                <h3>Experience the best your neighborhood has to offer, all in one app.</h3>
                 <div class="action-link"><span>Get the app</span><img src="assets/svgexport-7.svg"></div>
             </div>
         </div>
     </div>
 
     <div class="promote">
-        <div class="crave">
-            <div class="image-section"><img src="assets/download_the_app_mobile.avif"></div>
-            <div class="text-section">
-                <h2>Everything you crave, delivered.</h2>
-                <h3>Your favorite local restaurants</h3>
-                <span>Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the Chinese takeout spot you've been meaning to try.</span>
-                <button>Find restaurants</button>
+            <div class="crave">
+                <div class="image-section">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="assets/download_the_app_desktop.avif">
+                        <img src="assets/download_the_app_mobile.avif">
+                    </picture>
+                   
+                </div>
+                <div class="text-section">
+                    <h2>Everything you crave, delivered.</h2>
+                    <h3>Your favorite local restaurants</h3>
+                    <span>Get a slice of pizza or the whole pie delivered, or pick up house lo mein from the Chinese takeout spot you've been meaning to try.</span>
+                    <button>Find restaurants</button>
+                </div>
             </div>
-        </div>
         <div class="bg-shade"></div>
         <div class="dash-pass">
-            <div class="image-section"><img src="assets/dashpass_mobile.avif"></div>
+            <div class="image-section">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/dashpass_desktop.avif">
+                    <img src="assets/dashpass_mobile.avif">
+                </picture></div>
             <div class="text-section">
-                <h2>Dashpass is delivery for less</h2>
-                <span>Members get a $0 delivery free on DashPass orders, 5% back on picpup orders,and so much more. Plus, it's free for 30 days.</span>
+                <h2>DashPass is delivery for less</h2>
+                <span>Members get a $0 delivery fee on DashPass orders, 5% back on pickup orders, and so much more. Plus, it's free for 30 days.</span>
                 <button>Get DashPass</button>
             </div>
         </div>
@@ -124,66 +137,79 @@
         <div class="image-section"><img src="assets/grocery_desktop.avif"></div>
         <div class="overlay"></div>
         <div class="text-section">
-            <h2>Get Grocery and convenience store essentials</h2>
-            <h3>Grocery delivery,exactly how you want it.</h3>
-            <span>Shop fom home and fill your cart with fresh produce, frozen entrees, deli delights, and more.</span>
+            <h2>Get grocery and convenience store essentials</h2>
+            <h3>Grocery delivery, exactly how you want it.</h3>
+            <span>Shop from home and fill your cart with fresh produce, frozen entrees, deli delights, and more.</span>
             <button>Shop Groceries</button>
         </div>
     </div>
 
     <div class="features">
-        <div class="convenience">
-            <div class="image-section"><img src="assets/convenience_mobile.avif"></div>
-            <div class="text-section">
-                <h2>Convenience stores at your doorsteps</h2>
-                <span>Stock up on snacks, household essentials, candy,or vitamins - all delivered in under a hour.</span>
-                <button>Shop Now</button>
+        <div class="convenience-max">
+            <div class="convenience">
+                <div class="image-section">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="assets/convenience_desktop.avif">
+                        <img src="assets/convenience_mobile.avif">
+                    </picture>
+                </div>
+                <div class="text-section">
+                    <h2>Convenience stores at your doorstep</h2>
+                    <span>Stock up on snacks, household essentials, candy, or vitamins — all delivered in under an hour.</span>
+                    <button>Shop Now</button>
+                </div>
             </div>
         </div>
         <div class="shade"></div>
-        <div class="gifting">
-            <h2 class="caption">Helping you with to-dos and gifting</h2>
-            <div class="cards">
-                <div class="card">
-                    <div class="image-section"><img src="assets/package_pickup_mobile.avif"></div>
-                    <div class="text-section">
-                        <h3>Return packages from home</h3>
-                        <span>Request a package pickup with just a few taps and get your returns dropped off at carriers like UPS, FedEx, and USPS.</span>
-                        <button>Try Package Pickup</button>
+        <div class="gifting-max">
+            <div class="gifting">
+                <h2 class="caption">Helping you with to-dos and gifting</h2>
+                <div class="cards">
+                    <div class="card">
+                        <div class="image-section"><img src="assets/package_pickup_mobile.avif"></div>
+                        <div class="text-section">
+                            <h3>Return packages from home</h3>
+                            <span>Request a package pickup with just a few taps and get your returns dropped off at carriers like UPS, FedEx, and USPS.</span>
+                            <button>Try Package Pickup</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="image-section"><img src="assets/bts-backpack.webp"></div>
-                    <div class="text-section">
-                        <h3>Back to school shopping</h3>
-                        <span>From School snacks to notebooks, find everything on your back to school list.</span>
-                        <button>Shop Now</button>
+                    <div class="card">
+                        <div class="image-section"><img src="assets/bts-backpack.webp"></div>
+                        <div class="text-section">
+                            <h3>Back to school shopping</h3>
+                            <span>From School snacks to notebooks, find everything on your back to school list.</span>
+                            <button>Shop Now</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="image-section"><img src="assets/alcohol_mobile.avif"></div>
-                    <div class="text-section">
-                        <h3>Restock the minibar</h3>
-                        <span>Hosting a get together or need or need a special cocktail ingredient? get liquor,beer,mixers,champagne,and wine delivered fast.*</span>
-                        <button>Shop Alcohol</button>
+                    <div class="card">
+                        <div class="image-section"><img src="assets/alcohol_mobile.avif"></div>
+                        <div class="text-section">
+                            <h3>Restock the minibar</h3>
+                            <span>Hosting a get together or need or need a special cocktail ingredient? get liquor,beer,mixers,champagne,and wine delivered fast.*</span>
+                            <button>Shop Alcohol</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="image-section"><img src="assets/pet_supplies_mobile.avif"></div>
-                    <div class="text-section">
-                        <h3>What your pets need, and want</h3>
-                        <span>Finally, something cat peple and dog people agree on-- pet supplies delivery. Shop pet food,chew toys, and even costumes.</span>
-                        <button>Get Pet Supplies</button>
+                    <div class="card">
+                        <div class="image-section"><img src="assets/pet_supplies_mobile.avif"></div>
+                        <div class="text-section">
+                            <h3>What your pets need, and want</h3>
+                            <span>Finally, something cat peple and dog people agree on-- pet supplies delivery. Shop pet food,chew toys, and even costumes.</span>
+                            <button>Get Pet Supplies</button>
+                        </div>
                     </div>
-                </div>
-            </div>            
+                </div>            
+            </div>
         </div>
     </div>
 
     <div class="opportunity">
         <h2 class="caption">Unlocking opportunity for Dashers and businesses</h2>
         <div class="dasher">
-            <div class="image-section"><img src="assets/become_a_dasher_mobile.avif"></div>
+            <div class="image-section">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/become_a_dasher_desktop.avif">
+                    <img src="assets/become_a_dasher_mobile.avif"></div>
+                </picture>
             <div class="text-section">
                 <h2>Sign up to dash and get paid </h2>
                 <span>Deliver with the #1 Food and Drink App in the U.S., set your own schedule, and start earning cash anytime, anywhere.</span>
@@ -192,10 +218,14 @@
         </div>
         <div class="bg-shade"></div>
         <div class="business">
-            <div class="image-section"><img src="assets/work_with_doordash_mobile.avif"></div>
+            <div class="image-section">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/work_with_doordash_desktop.avif">
+                    <img src="assets/work_with_doordash_mobile.avif"></div>
+                </picture>
             <div class="text-section">
                 <h2>Grow your business with DoorDash</h2>
-                <span>Businesses large and small partner up with DoorDash to reach new customers, increase order volume, and drive more sales.</span>
+                <span>Businesses large and small partner with DoorDash to reach new customers, increase order volume, and drive more sales.</span>
                 <button>Become a Partner</button>
             </div>
         </div>
