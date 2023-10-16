@@ -86,6 +86,8 @@ button{
     padding-top:0px;
     display: flex;
     flex-direction: column;
+    /* background-color: rgb(83,83,83); */
+    background:linear-gradient(to bottom right,30% #121212,70% rgba(0,0,0.6));
 }
 .scroll{
     display:flex;
@@ -144,7 +146,7 @@ button{
         margin-top: 43px;
     }
     .scroll{
-        margin-top:22px;
+        margin-top:23px;
     }
 }
 
@@ -160,18 +162,23 @@ button{
 
     body{
         background-color: #000;
+        height:100%;
     }
-
+    html{
+        height:100%;
+    }
     .main-pane{
         background-color: rgba(29, 27, 27, 0.774);
     }
     .toolbar{
         display: flex;
-        background-color: #000;
+        background-color: #121212;
         justify-content: space-between;
         padding:16px;
+        border-top-right-radius: 8px;
         padding-top:8px;
         padding-bottom:8px;
+        border-radius: 8px;
     }
     .arrow-container{
         display:flex;
@@ -193,6 +200,7 @@ button{
     .main{
         display: flex;
         width:100%;
+        height:calc(100% - 75px);
         column-gap: 8px;
         padding:8px;
         box-sizing: border-box;
@@ -204,14 +212,18 @@ button{
         row-gap:8px;
         width:43%;
         max-width:420px;
+        height:100%;
     }
     .main-pane{
         width:57%;
         flex-grow: 1;
+        height:100%;
         /* max-width: */
+        border-radius: 8px;
     }
     .nav{
-        background-color: rgba(29, 27, 27, 0.774);
+        background-color: #121212;
+
         padding: 8px 24px ;
         padding-bottom:20px;
         border-radius:8px;
@@ -238,21 +250,23 @@ button{
     .library{
         display:flex;
         flex-direction:column;
-        background-color: rgba(29, 27, 27, 0.774);
+        background-color: #121212;
+        height:100%;
         padding:8px;
         border-radius:8px;
         font-family:sbold;
+        position: relative;
     }
     .action{
         display: flex;
         justify-content: space-between;
         padding:8px 16px;
-        margin-bottom:8px;
     }
     .your-library{
         display:flex;
         align-items: center;
         column-gap:12px;
+        color:rgb(167, 167, 167);
     }
     .plus{
         display: flex;
@@ -262,12 +276,16 @@ button{
     .shade-box{
         display:flex;
         flex-direction: column;
-        background-color: rgba(136, 133, 133, 0.253);
+        background-color: #242424;
+
         padding:16px 20px;
         border-radius: 8px;
         margin-bottom: 8px;
-        margin-top: 8px;
+        margin-top: 16px;
     }
+    /* .shade-box:nth-child(2){
+        margin-top:16px;
+    } */
     .shade-box h2{
         font-size:16px;
         line-height:25.6px;
@@ -292,10 +310,17 @@ button{
         display: flex;
         flex-direction: column;
         justify-self: flex-end;
-        padding-left:24px;
+        padding-left:16px;
+        position: absolute;
+        bottom:32px;
+        left:8px;
+        /* margin-top:136px */
     }
     .end-items span{
         font-size:11px;
+        font-family:sbook;
+        color:rgb(179, 179, 179);
+
     }
     .end-items button{
         background-color:black;
@@ -303,10 +328,21 @@ button{
         color:white;
         display: flex;
         align-items: center;
+        margin-top: 35px;
+        /* margin-top: 35px;
+        margin-bottom:24px; */
+        padding:5px 15px;
+        padding-left:12px;
+        padding-top:4px;
     }
     .end-items button span{
         font-size: 14px;
         margin-left:4px;
+        font-family:sbold;
+        color:white;
+    }
+    .end-items button img{
+        margin-top:2px;
     }
     .signup,.login{
         font-size: 16px;
@@ -318,7 +354,7 @@ button{
         height:48px;
     }
     .signup{
-        background-color:black;
+        background-color:transparent;
         color:rgb(179, 179, 179);
         padding-right:28px;
     }
@@ -329,14 +365,19 @@ button{
     }
 
     .playlist{
-        margin-top:9px;
+        margin-top:0px;
+        padding-top:9px;
         padding-right:16px;
+        height:100%;
+        box-sizing: border-box;
+        background: linear-gradient(to bottom,rgb(37, 36, 36) 10%,#121212 30%);
     }
     .playlist h3{
         font-size:14px;
         line-height:22.4px;
         font-family:sbold;
         color:rgb(179, 179, 179);
+        margin-top:-1px;
     }
     .title-bar{
         margin-top: 2px;
@@ -347,40 +388,146 @@ button{
     }
     .card{
         padding:16px;
+        padding-top:15px;
         box-sizing: border-box;
         border-radius:8px;
-        background-color: #575454;
+        background-color: rgb(24, 24, 24);
+        max-width: 170.56px;
+        width:calc(calc(100% / 3) - 12px);
+        flex-shrink:0;
+        max-height:261px;
     }
     .card h2{
         font-family: sbold;
-        margin-top:16px;
-        margin-bottom:4px;
+        margin-top:9px;
+        margin-bottom:6px;
     }
     .card span{
         font-family:sbook;
         color:rgb(167, 167, 167);
         font-size:14px;
         line-height:22.4px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow:hidden;
     }
     .card .image-section{
         width:auto;
         height:auto;
+        display: flex;
+        justify-content: space-around;
     }
     .card .image-section img{
-        width:138.63px;
-        height:138.63px;
+        width:100%;
+        height:100%;
     }
 
+    footer{
+        position: fixed;
+        left:0;
+        bottom:0;
+        width:100%;
+    }
     .footer{
         margin:8px;
         padding-left: 15px;
         padding-right:24px;
-        padding-top:11px;
+        padding-top:12px;
         padding-bottom: 7px;;
+        box-sizing: border-box;
         display:flex;
         align-items:center;
+        justify-content: space-between;
         background: linear-gradient(90deg,#af2896,#509bf5);
     }
+    .footer h3{
+        font-size:12px;
+        letter-spacing: 1.2px;
+        line-height:19.2px;;
+        font-family: sbook;
+        font-weight:400;
+    }
+    .footer h4{
+        font-size:16px;
+        font-family:sbook;
+        font-weight:400;
+        margin-bottom: 7px;
 
+    }
+    .footer button{
+        letter-spacing:0ch;
+        font-size:16px;
+        padding:10px 32px;
+        height:48px;
+    }
+    /* corrections */
+  
+    .end-items button img{
+        margin-top:0px;
+
+    }
+    .end-items button{
+        padding-top: 5px;
+    }
+    .footer h3{
+       line-height:19.2px;
+    }
+    .footer h4{
+        line-height:25.6px;
+        margin-bottom:4px;
+    }
+    .footer{
+        padding-top: 11px;
+    }
 }
 
+@media screen and (min-width:1440px ){
+    
+    .toolbar{
+    padding: 8px 24px;
+
+    }
+    .playlist{
+        padding-left:24px;
+        padding-right:24px;
+    }
+    .scroll{
+        column-gap:24px;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .playlist h3{
+        display:none;
+    }
+
+    
+    .card{
+        max-height: 280.94px;
+        max-width:183.42px;
+        padding-top:17px;
+    }
+    .card h2{
+        margin-top:9px;
+        margin-bottom: 6.5px;
+    }
+
+    .end-items button img{
+        margin-top:0px;
+
+    }
+    .end-items button{
+        padding-top: 5px;
+    }
+    .footer h3{
+       line-height:19.2px;
+    }
+    .footer h4{
+        line-height:25.6px;
+        margin-bottom:4px;
+    }
+    .footer{
+        padding-top: 11px;
+    }
+}
