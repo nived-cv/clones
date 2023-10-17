@@ -76,7 +76,8 @@ button{
     box-sizing: border-box;
 }
 .header-section button{
-    margin-top:1px;
+    /* margin-top:1px; */
+    padding-top: 9px;
 }
 
 .playlist{
