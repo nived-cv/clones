@@ -1197,8 +1197,14 @@ footer{
         width:100%;
         text-align: left;
         align-items: flex-start;
-        margin-bottom:32px;
+        /* margin-bottom:32px; */
         margin-top:32px;
+    }
+    .footer-item:nth-child(2) {
+        margin-top: 0px;
+    }
+    .footer-item:nth-child(3){
+        margin-top: 52px;;
     }
     .categories{
         column-gap:12px;
